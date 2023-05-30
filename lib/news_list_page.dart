@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -103,13 +104,17 @@ class _NewsListPageState extends State<NewsListPage> {
                     Expanded(
                       flex: 66,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Expanded(
                             flex: 50,
                             child: Text(
                               title.toString(),
                               style:
-                              const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,),
                               maxLines: 2,
                             ),
                           ),

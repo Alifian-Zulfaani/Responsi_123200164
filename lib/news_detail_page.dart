@@ -75,8 +75,6 @@ class NewsDetailPage extends StatelessWidget {
                   const SizedBox(height: 20,),
                   Container(
                     width: double.infinity,
-                    child: Padding(
-                      padding: const EdgeInsets.all(20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -86,7 +84,7 @@ class NewsDetailPage extends StatelessWidget {
                             textAlign: TextAlign.left,
                             style: const TextStyle(
                               fontSize: 16,
-                              wordSpacing: 3,
+                              wordSpacing: 2,
                             ),
                             maxLines: 11,
                             overflow: TextOverflow.ellipsis,
@@ -94,8 +92,7 @@ class NewsDetailPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 110),
+                  const SizedBox(height: 150),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.end,
